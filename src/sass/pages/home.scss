@@ -1,0 +1,16 @@
+@import "../utils/colors";
+@import "../utils/margins";
+
+.localization {
+  height: map-get($margins, xl);
+  background-color: $color-grey;
+  column-gap: map-get($margins, xs);
+}
+
+.introduction {
+  background-color: $color-light-grey;
+  flex-direction: column;
+  padding: map-get($margins, xl) map-get($margins, l);
+  text-align: center;
+  row-gap: map-get($margins, s);
+}

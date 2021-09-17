@@ -2,6 +2,10 @@ $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-terciary: #99edd0;
 
+$color-dark-grey: #353535;
+$color-grey: #eaeaea;
+$color-light-grey: #f6f6f6;
+
 $color-black: #000;
 $color-white: #fff;
 
@@ -9,4 +13,6 @@ $gradient: linear-gradient(
   164deg,
   rgba(255, 121, 218, 1) 0%,
   rgba(147, 86, 220, 1) 100%
-); ;
+);
+
+$shadow: 2px 2px 8px #ababab;

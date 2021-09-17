@@ -1,0 +1,13 @@
+@import "../utils/colors";
+@import "../utils/margins";
+
+header {
+  background-color: $color-white;
+  height: map-get($margins, xxxl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  position: relative;
+  box-shadow: $shadow;
+}

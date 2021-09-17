@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+$font-family-serif: "Shrikhand";
+$font-family-sans-serif: "Roboto";
+
+$titles: (
+  h1-default: (
+    font-size: 24px,
+    font-weight: 700,
+  ),
+  h2-display: (
+    font-family: $font-family-serif,
+    font-size: 28px,
+  ),
+  h3-category: (
+    font-size: 16px,
+    font-weight: 300,
+  ),
+  h4-card: (
+    font-size: 18px,
+    font-weight: 700,
+  ),
+);
+
+$subtitles: (
+  default: (
+    font-size: 18px,
+    font-weight: 400,
+  ),
+  card: (
+    font-size: 17px,
+    font-weight: 300,
+  ),
+);
+
+$text: (
+  default: (
+    font-size: 16px,
+    font-weight: (
+      regular: 400,
+      medium: 500,
+    ),
+  ),
+  tag: (
+    font-size: 14px,
+    font-weight: 500,
+  ),
+);
