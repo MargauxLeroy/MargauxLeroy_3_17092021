@@ -10,9 +10,9 @@
 body > section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 // h1 {
-
+// font-size: map-get($titles, h1-default(font-size));
 // }

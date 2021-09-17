@@ -2,6 +2,7 @@
 @import "../utils/margins";
 
 .localization {
+  align-items: center;
   height: map-get($margins, xl);
   background-color: $color-grey;
   column-gap: map-get($margins, xs);
@@ -9,8 +10,52 @@
 
 .introduction {
   background-color: $color-light-grey;
+  align-items: center;
   flex-direction: column;
-  padding: map-get($margins, xl) map-get($margins, l);
+  padding: map-get($margins, xl);
   text-align: center;
   row-gap: map-get($margins, s);
+}
+
+.explanation {
+  background-color: $color-white;
+  flex-direction: column;
+  padding: map-get($margins, xl) map-get($margins, s);
+  row-gap: map-get($margins, m);
+  &__cards {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    row-gap: map-get($margins, m);
+    > div {
+      width: calc(100% - 12px);
+      display: flex;
+      position: relative;
+      background-color: $color-light-grey;
+      border-radius: 18px;
+      box-shadow: $shadow;
+      padding: map-get($margins, m) map-get($margins, l);
+      column-gap: map-get($margins, xs);
+      > span {
+        background-color: $color-primary;
+        color: $color-white;
+        position: absolute;
+        height: map-get($margins, m);
+        width: map-get($margins, m);
+        border-radius: 99px;
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+        left: 0;
+        line-height: 1.5;
+        text-align: center;
+      }
+      > i {
+        color: $color-medium-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }

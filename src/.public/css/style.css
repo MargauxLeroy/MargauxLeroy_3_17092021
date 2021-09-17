@@ -12,7 +12,7 @@
 body > section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 header {
@@ -38,6 +38,7 @@ button {
 }
 
 .localization {
+  align-items: center;
   height: 48px;
   background-color: #eaeaea;
   column-gap: 18px;
@@ -45,10 +46,54 @@ button {
 
 .introduction {
   background-color: #f6f6f6;
+  align-items: center;
   flex-direction: column;
-  padding: 48px 35px;
+  padding: 48px;
   text-align: center;
   row-gap: 20px;
+}
+
+.explanation {
+  background-color: #fff;
+  flex-direction: column;
+  padding: 48px 20px;
+  row-gap: 24px;
+}
+.explanation__cards {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.explanation__cards > div {
+  width: calc(100% - 12px);
+  display: flex;
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 18px;
+  box-shadow: 2px 2px 8px #ababab;
+  padding: 24px 35px;
+  column-gap: 18px;
+}
+.explanation__cards > div > span {
+  background-color: #9356dc;
+  color: #fff;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border-radius: 99px;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+.explanation__cards > div > i {
+  color: #8a8787;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
