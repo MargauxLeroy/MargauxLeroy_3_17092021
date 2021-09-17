@@ -1,2 +1,4 @@
 # MargauxLeroy_3_17092021
- Site web responsive Oh my Food
+
+<strong>Projet n°3 OpenClassrooms :</strong> <br>
+Dynamisez une page web avec des animations CSS
