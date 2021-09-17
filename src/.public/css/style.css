@@ -6,13 +6,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   font-family: "Roboto";
+  font-style: 16px;
+  font-weight: 400;
 }
 
 body > section {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.subtitle-card {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.tag {
+  font-size: 14px;
 }
 
 header {
@@ -35,6 +74,8 @@ button {
   border-radius: 24px;
   padding: 0 24px;
   box-shadow: 2px 2px 8px #ababab;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .localization {
@@ -48,7 +89,7 @@ button {
   background-color: #f6f6f6;
   align-items: center;
   flex-direction: column;
-  padding: 48px;
+  padding: 48px 18px;
   text-align: center;
   row-gap: 20px;
 }
@@ -86,10 +127,11 @@ button {
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
   left: 0;
-  line-height: 1.5;
+  line-height: 1.75;
   text-align: center;
 }
 .explanation__cards > div > i {
+  width: 24px;
   color: #8a8787;
   display: flex;
   justify-content: center;
