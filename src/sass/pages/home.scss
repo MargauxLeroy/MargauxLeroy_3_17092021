@@ -2,6 +2,8 @@
 @import "../utils/margins";
 
 .localization {
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: map-get($margins, xl);
   background-color: $color-grey;
@@ -11,17 +13,11 @@
 .introduction {
   background-color: $color-light-grey;
   align-items: center;
-  flex-direction: column;
-  padding: map-get($margins, xl) map-get($margins, xs);
   text-align: center;
-  row-gap: map-get($margins, s);
 }
 
 .explanation {
   background-color: $color-white;
-  flex-direction: column;
-  padding: map-get($margins, xl) map-get($margins, s);
-  row-gap: map-get($margins, m);
   &__cards {
     width: 100%;
     display: flex;
@@ -33,8 +29,6 @@
       display: flex;
       position: relative;
       background-color: $color-light-grey;
-      border-radius: 18px;
-      box-shadow: $shadow;
       padding: map-get($margins, m) map-get($margins, l);
       column-gap: map-get($margins, xs);
       > span {
@@ -58,5 +52,15 @@
         align-items: center;
       }
     }
+  }
+}
+
+.restaurants {
+  background-color: $color-light-grey;
+  &__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: map-get($margins, m);
   }
 }

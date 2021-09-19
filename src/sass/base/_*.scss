@@ -1,4 +1,6 @@
 @import "../utils/typography";
+@import "../utils/margins";
+@import "../utils/colors";
 
 * {
   margin: 0;
@@ -12,43 +14,22 @@ html {
   font-weight: 400;
 }
 
-body > section {
+body > main > section {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
+  padding: map-get($margins, xl) map-get($margins, s);
+  row-gap: map-get($margins, s);
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: 700;
+div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-h2 {
-  font-family: $font-family-serif;
-  font-size: 28px;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: 300;
-}
-
-h4 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.subtitle {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.subtitle-card {
-  font-size: 17px;
-  font-weight: 300;
-}
-
-.tag {
-  font-size: 14px;
-  // font-weight: 500;
+ol,
+ul {
+  list-style: none;
 }

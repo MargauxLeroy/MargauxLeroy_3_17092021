@@ -1,0 +1,10 @@
+@import "../utils/colors";
+@import "../utils/margins";
+
+.tag {
+  background-color: $color-terciary;
+  color: $color-terciary-darker;
+  padding: map-get($margins, xxxs) map-get($margins, xxs);
+  border-radius: 4px;
+  font-size: 14px;
+}

@@ -3,3 +3,33 @@
 
 $font-family-serif: "Shrikhand";
 $font-family-sans-serif: "Roboto";
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: $font-family-serif;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}

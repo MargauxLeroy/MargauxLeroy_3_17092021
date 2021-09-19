@@ -1,0 +1,24 @@
+@import "../utils/colors";
+@import "../utils/margins";
+
+footer {
+  background-color: $color-dark-grey;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: map-get($margins, l) map-get($margins, m);
+  row-gap: map-get($margins, m);
+  > ol {
+    display: flex;
+    flex-direction: column;
+    row-gap: map-get($margins, xxs);
+    > li {
+      display: flex;
+      column-gap: 4px;
+      > i {
+        width: map-get($margins, m);
+      }
+    }
+  }
+}
