@@ -11,3 +11,19 @@ header {
   position: relative;
   box-shadow: $shadow;
 }
+
+.header {
+  justify-content: start;
+  > a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  > a:nth-child(1) {
+    width: 18%;
+  }
+  > a:nth-child(2) {
+    width: calc(100% - 36%);
+    align-items: center;
+  }
+}

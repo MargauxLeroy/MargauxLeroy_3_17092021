@@ -3,12 +3,14 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/card-restaurant";
+@import "./layout/card-dish";
 
 @import "./components/card";
 @import "./components/button";
 @import "./components/tag";
 
 @import "./pages/home";
+@import "./pages/restaurant-menu";
 
 @import "./utils/typography";
 @import "./utils/colors";
