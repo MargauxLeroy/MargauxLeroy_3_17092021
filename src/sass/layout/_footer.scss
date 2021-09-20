@@ -13,9 +13,10 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: map-get($margins, xxs);
-    > li {
+    > li a {
       display: flex;
       column-gap: 4px;
+      color: $color-white;
       > i {
         width: map-get($margins, m);
       }

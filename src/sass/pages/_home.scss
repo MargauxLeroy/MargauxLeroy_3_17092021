@@ -24,7 +24,7 @@
     align-items: end;
     flex-direction: column;
     row-gap: map-get($margins, m);
-    > div {
+    > li {
       width: calc(100% - 12px);
       display: flex;
       position: relative;
@@ -45,11 +45,7 @@
         text-align: center;
       }
       > i {
-        width: map-get($margins, m);
         color: $color-medium-grey;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
     }
   }

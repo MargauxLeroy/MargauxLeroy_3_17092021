@@ -23,11 +23,7 @@
       display: grid;
     }
     > i {
-      width: map-get($margins, m);
       height: map-get($margins, m);
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-size: 20px;
     }
   }
