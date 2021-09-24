@@ -17,5 +17,11 @@ $gradient: linear-gradient(
   rgba(255, 121, 218, 1) 0%,
   rgba(147, 86, 220, 1) 100%
 );
+$gradient-hover: linear-gradient(
+  164deg,
+  rgba(255, 121, 218, 0.92) 0%,
+  rgba(147, 86, 220, 0.92) 100%
+);
 
 $shadow: 2px 2px 8px #ababab;
+$shadow-darker: 4px 4px 8px #ababab;
