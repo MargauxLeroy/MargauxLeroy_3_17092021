@@ -41,8 +41,9 @@
         transform: translateX(-50%) translateY(-50%);
         top: 50%;
         left: 0;
-        line-height: 1.75;
-        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
       }
       > i {
         color: $color-medium-grey;
