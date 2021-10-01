@@ -2,19 +2,96 @@
 @import "../utils/margins";
 
 .card-dish {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: map-get($margins, xxs) map-get($margins, m) map-get($margins, xxs)
-    map-get($margins, xxs);
-  > div {
-    width: 80%;
+  opacity: 0;
+  animation: fade-in 1s ease-out forwards;
+  overflow: hidden;
+  > :nth-child(1) {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    row-gap: 4px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    transition: all 300ms ease-in-out;
+    padding: map-get($margins, xxs) map-get($margins, m) map-get($margins, xxs)
+      map-get($margins, xxs);
+    > div {
+      width: 80%;
+      > h4,
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      // > h4 {
+      //   display: -webkit-box;
+      //   -webkit-line-clamp: 2;
+      //   -webkit-box-orient: vertical;
+      // }
+      // > p {
+      //   white-space: nowrap;
+      // }
+    }
+
+    > p {
+      font-weight: 600;
+      color: $color-dark-grey;
+    }
   }
-  > p {
-    font-weight: 600;
-    color: $color-dark-grey;
+  > .dish--add {
+    opacity: 0;
+    height: 100%;
+    width: 0%;
+    background-color: $color-terciary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 300ms ease-in-out;
+    > i {
+      font-size: 20px;
+      color: $color-white;
+      transition: transform 500ms;
+      transform: rotate(-280deg);
+    }
+  }
+  &:hover > :nth-child(1) {
+    width: 80%;
+    // > div h4,
+    // div p {
+    //   white-space: nowrap;
+    //   overflow: hidden;
+    //   text-overflow: ellipsis;
+    // }
+  }
+  &:hover > .dish--add {
+    opacity: 100%;
+    width: 20%;
+    & > i {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@for $i from 0 through 20 {
+  .card-dish:nth-child(#{$i + 1}) {
+    animation-delay: 0.3s * $i;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(14%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
   }
 }
