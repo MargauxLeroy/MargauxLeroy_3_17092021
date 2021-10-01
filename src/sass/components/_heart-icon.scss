@@ -1,0 +1,29 @@
+@import "../utils/colors";
+@import "../utils/margins";
+
+i.fa-heart {
+  height: map-get($margins, m);
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: map-get($margins, m);
+  transition: all 400ms ease-in-out;
+  &.far {
+    z-index: 1;
+  }
+  &.fas {
+    opacity: 0;
+    transform: scale(0);
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.far:hover {
+  opacity: 0;
+}
+.far:hover + .fas {
+  opacity: 1;
+  transform: scale(1);
+}

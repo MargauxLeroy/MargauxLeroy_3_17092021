@@ -21,5 +21,8 @@ footer {
         width: map-get($margins, m);
       }
     }
+    > li a:hover {
+      opacity: 0.8;
+    }
   }
 }

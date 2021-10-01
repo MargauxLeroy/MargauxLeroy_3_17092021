@@ -23,7 +23,7 @@ main {
       display: flex;
       justify-content: space-between;
       padding: 0 map-get($margins, xxs) 0 0;
-      > i {
+      > i.fa-heart {
         font-size: 24px;
       }
     }
