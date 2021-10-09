@@ -6,7 +6,7 @@ i.fa-heart {
   font-size: 20px;
   position: absolute;
   right: 0;
-  margin-right: map-get($margins, m);
+  margin-right: 5.5%;
   transition: all 400ms ease-in-out;
   &.far {
     z-index: 1;
