@@ -22,6 +22,7 @@ main {
       width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 0 map-get($margins, xxs) 0 0;
       > i.fa-heart {
         font-size: 24px;

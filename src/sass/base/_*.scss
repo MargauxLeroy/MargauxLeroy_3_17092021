@@ -19,7 +19,7 @@ body > main > section {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  padding: map-get($margins, xl) map-get($margins, s);
+  padding: map-get($margins, xl) 5.5%;
   row-gap: map-get($margins, s);
 }
 

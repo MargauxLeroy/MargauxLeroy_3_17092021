@@ -7,7 +7,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: map-get($margins, l) map-get($margins, m);
+  padding: map-get($margins, l) 5.5%;
   row-gap: map-get($margins, m);
   > ol {
     display: flex;
@@ -23,6 +23,15 @@ footer {
     }
     > li a:hover {
       opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  footer {
+    > ol {
+      flex-direction: row;
+      column-gap: map-get($margins, m);
     }
   }
 }

@@ -24,6 +24,12 @@
     align-items: end;
     flex-direction: column;
     row-gap: map-get($margins, m);
+    > li.card:nth-child(3) {
+      background-color: #9356dc1c;
+      > i {
+        color: $color-primary;
+      }
+    }
     > li {
       width: calc(100% - 12px);
       display: flex;
@@ -52,12 +58,52 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .explanation {
+    &__cards {
+      flex-direction: row;
+      column-gap: 24px;
+      .tag {
+        top: 0;
+        left: 50%;
+      }
+    }
+  }
+}
+
 .restaurants {
   background-color: $color-light-grey;
   &__cards {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     row-gap: map-get($margins, m);
+  }
+}
+
+@media (min-width: 660px) {
+  .restaurants {
+    &__cards {
+      flex-direction: initial;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      > .card-restaurant {
+        min-width: 48%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .restaurants {
+    &__cards {
+      flex-direction: initial;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      > .card-restaurant {
+        min-width: 22%;
+      }
+    }
   }
 }
