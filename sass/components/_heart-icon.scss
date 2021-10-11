@@ -23,7 +23,14 @@ i.fa-heart {
 .far:hover {
   opacity: 0;
 }
+.far:active {
+  opacity: 0;
+}
 .far:hover + .fas {
+  opacity: 1;
+  transform: scale(1);
+}
+.far:active + .fas {
   opacity: 1;
   transform: scale(1);
 }

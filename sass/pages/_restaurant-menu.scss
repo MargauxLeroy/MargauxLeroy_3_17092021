@@ -39,7 +39,7 @@ main {
         flex-direction: column;
         row-gap: 4px;
         > span {
-          width: 10%;
+          width: 40px;
           height: 3px;
           background-color: $color-terciary;
           display: block;
@@ -59,6 +59,9 @@ main {
 
 @media (min-width: 880px) {
   main {
+    > .restaurant__img {
+      height: 50vh;
+    }
     > .restaurant__menu {
       > section {
         > ul {

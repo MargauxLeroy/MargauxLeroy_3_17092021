@@ -7,7 +7,7 @@
   align-items: center;
   height: map-get($margins, xl);
   background-color: $color-grey;
-  column-gap: map-get($margins, xs);
+  column-gap: map-get($margins, xxxs);
 }
 
 .introduction {
@@ -41,7 +41,7 @@
         background-color: $color-primary;
         color: $color-white;
         position: absolute;
-        height: map-get($margins, m);
+        height: 28px;
         width: map-get($margins, m);
         border-radius: 99px;
         transform: translateX(-50%) translateY(-50%);

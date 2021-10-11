@@ -20,10 +20,10 @@ header {
     justify-content: center;
   }
   > a:nth-child(1) {
-    width: 8%;
+    width: 60px;
   }
   > a:nth-child(2) {
-    width: calc(100% - 16%);
+    width: calc(100% - 120px);
     align-items: center;
   }
 }

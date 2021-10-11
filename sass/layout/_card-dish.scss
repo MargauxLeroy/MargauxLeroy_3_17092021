@@ -19,21 +19,13 @@
     padding: map-get($margins, xxs) map-get($margins, m) map-get($margins, xxs)
       map-get($margins, xxs);
     > div {
-      width: 80%;
+      width: 85%;
       > h4,
       p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      // > h4 {
-      //   display: -webkit-box;
-      //   -webkit-line-clamp: 2;
-      //   -webkit-box-orient: vertical;
-      // }
-      // > p {
-      //   white-space: nowrap;
-      // }
     }
 
     > p {
